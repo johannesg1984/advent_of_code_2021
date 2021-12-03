@@ -9,16 +9,7 @@ import numpy as np
 from collections import defaultdict
 import copy
 
-name_of_file="day_03_data.txt"
-# name_of_file="day_03_data_test.txt"
 
-with open("data\\"+name_of_file) as file:
-    input_data=[]
-    for line in file:
-        temp=(line.strip())
-        input_data.append(list(temp))
-
-data_array=np.array(input_data)
 
 #part 1
 
@@ -101,13 +92,25 @@ def part_2(data_array,rating):
     return int(string_temp,2)
 
 
- 
+if __name__ == "__main__":
 
-answer_part_1=part_1(data_array)
-  
-o2_rating=part_2(data_array,"o2")
-co2_rating=part_2(data_array,"co2")
-answer_part_2=o2_rating*co2_rating
+    name_of_file="day_03_data.txt"
+    # name_of_file="day_03_data_test.txt"
+
+    with open("data\\"+name_of_file) as file:
+        input_data=[]
+        for line in file:
+            temp=(line.strip())
+            input_data.append(list(temp))
+
+    data_array=np.array(input_data)
+
+
+    answer_part_1=part_1(data_array)
+    
+    o2_rating=part_2(data_array,"o2")
+    co2_rating=part_2(data_array,"co2")
+    answer_part_2=o2_rating*co2_rating
 
 
 
