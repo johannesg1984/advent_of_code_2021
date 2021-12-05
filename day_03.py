@@ -114,9 +114,9 @@ if __name__ == "__main__":
 
 
 
-print("The answer to day 3")
-print("Part 1: {}".format(answer_part_1))
-print("Part 2: {}".format(answer_part_2))
+    print("The answer to day 3")
+    print("Part 1: {}".format(answer_part_1))
+    print("Part 2: {}".format(answer_part_2))
 
 
 
