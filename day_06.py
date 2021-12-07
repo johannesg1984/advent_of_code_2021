@@ -15,9 +15,10 @@ def lanterfish_spawn(time,fish_timer):
         
             if time==run_time:
                 return 1
-            
+        
             fish_timer-=1
             time+=1
+        
 
         #just kill of the fish and assume that it spawns two new ones
         return lanterfish_spawn(time,spawn_time_new_fish-1)+lanterfish_spawn(time,spawn_time_old_fish-1)
