@@ -7,3 +7,7 @@
 
 # Local History for Visual Studio Code
 .history/
+.vscode/
+__pycache__/
+.idea/
+.gitignore

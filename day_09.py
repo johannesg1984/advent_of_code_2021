@@ -136,7 +136,7 @@ if __name__ == "__main__":
 
     answer_part_1=calc_risk_levels("data\\"+name_of_file)
 
-    basin_areas=calc_basin_sizes("data\\"+name_of_file)
+    basin_areas = calc_basin_sizes("data\\"+name_of_file)
 
     basin_areas.sort()
 
